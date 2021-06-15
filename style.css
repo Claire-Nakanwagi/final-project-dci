@@ -1,0 +1,245 @@
+@import 'https://fonts.googleapis.com/css2?family=Italianno&display=swap';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(73, 64, 27);
+}
+
+h1.title {
+	margin-bottom: 20px;
+	color: rgb(88, 80, 39);
+	font-family: 'Italianno', cursive;
+	text-transform: uppercase;
+	font-size: 38px;
+	word-spacing: 20px;
+	letter-spacing: 5px;
+}
+
+.btn a {
+	display: block;
+	width: 180px;
+	height: 35px;
+	border: 2px solid #fad37f;
+	line-height: 35px;
+	margin: 25px auto 0;
+	color: #a17412;
+	text-align: center;
+}
+.main_container {
+	position: relative;
+}
+
+/*  Navigation Bar*/
+
+.navbar {
+	width: 100%;
+	height: 65px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: absolute;
+}
+
+.logo a {
+	font-family: 'Italianno', cursive;
+	font-size: 32px;
+	color: rgb(19, 16, 2);
+	text-shadow: 1px 1px rgb(133, 124, 92);
+}
+
+.navbar .navbar_items ul {
+	display: flex;
+}
+
+.navbar .navbar_items ul li {
+	text-transform: uppercase;
+	margin: 0 10px;
+}
+
+.navbar .navbar_items ul li a {
+	color: rgb(14, 11, 1);
+	text-shadow: 1px 1px rgb(170, 155, 102);
+}
+
+/** Banner image . may have to change this later. the height esp**/
+
+.banner_image {
+	background-image: url("images/hat-longblacktie.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 1000px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/** change font later and maybe color mid area**/
+.banner_content {
+	font-family: 'Italianno', cursive;
+	text-align: center;
+	color: rgb(230, 223, 223);
+	font-size: 35px;
+}
+
+/** change text transform and color maybe top**/
+
+.banner_content h1 {
+	text-transform: none;
+	line-height: 38px;
+	margin-bottom: 15px;
+	font-family: 'Italianno', cursive;
+	font-size: 50px;
+	font-weight: bold;
+	color: rgb(10, 8, 0);
+	text-shadow: 1px 1px rgb(184, 174, 135);
+}
+
+.banner_content h1 span {
+	text-transform: none;
+	line-height: 38px;
+	margin-bottom: 15px;
+	font-family: 'Italianno', cursive;
+	font-size: 50px;
+	color: rgb(17, 15, 1);
+	text-shadow: 1px 1px rgb(180, 174, 151);
+}
+
+/** About us **/
+
+.about,
+.products,
+.contactus,
+.ourteam {
+	padding: 5% 10%;
+	text-align: center;
+}
+
+/** products**/
+
+.products {
+	background: rgb(216, 205, 163);
+}
+
+/** space between items(justify content is not working)**/
+.diff_products {
+	display: flex;
+	margin-top: 35px;
+	justify-content: space-between;
+}
+.diff_product_item {
+	width: 30%;
+}
+.diff_product_item img {
+	width: 100%;
+	height: 45%;
+	margin-bottom: 25px;
+	object-fit: cover;
+}
+.diff_product_item h3 {
+	color: rgb(58, 47, 4);
+	margin-bottom: 15px;
+}
+/** contact form or contact us part **/
+
+.form_input {
+	margin-bottom: 15px;
+}
+.form_input input {
+	width: 250px;
+	padding: 12px 20px;
+	border: 1px solid #ccc;
+}
+
+.form_input textarea {
+	width: 250px;
+	padding: 12px 20px;
+	height: 80px;
+	resize: none;
+	border: 1 px solid;
+	color: rgb(95, 78, 9);
+}
+
+/** Our Team next to eachother. **/
+.ourteam {
+	background: rgb(209, 198, 153);
+}
+
+.ourteam_wrapper .team_member {
+	display: flex;
+	margin-top: 35px;
+	justify-content: space-between;
+}
+.ourteam_wrapper .team-1.team {
+	margin-bottom: 25px;
+}
+.ourteam_wrapper .team_member {
+	width: 30%;
+	height: auto;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.ourteam_wrapper .team_member img {
+	width: 100%;
+	display: block;
+	height: auto;
+	transition: all 0.5s ease;
+}
+.ourteam_wrapper:hover img {
+	transform: scale(1.1);
+}
+/** footer**/
+
+.footer {
+	width: 100%;
+	text-align: center;
+	background: rgb(129, 114, 53);
+	padding: 20px o;
+}
+.footer a {
+	color: white;
+}
+@media (max-width: 720px) {
+	.navbar {
+		height: auto;
+		flex-direction: column;
+	}
+	.navbar ul {
+		flex-direction: column;
+		text-align: center;
+	}
+	.logo {
+		margin-bottom: 25px;
+	}
+	.navbar ul li {
+		margin-bottom: 5px;
+	}
+	.banner_content {
+		margin-top: 35px;
+	}
+
+	/**work on this as well**/
+	.gototopbtn {
+		padding: 20px;
+		bottom: 0;
+		width: 100%;
+		height: 60px;
+		text-align: right;
+		position: fixed;
+		float: center;
+	}
+	.gototopbtn a {
+		background-color: rgb(129, 114, 53);
+		border-radius: 5%;
+		text-decoration: none;
+		padding: 20px;
+	}
+}
